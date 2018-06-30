@@ -1,0 +1,39 @@
+.ss-component-update-form{
+background: $ss-lign-fill;
+}
+.ss-form{
+max-width:$container-max-width;
+margin:auto;
+padding:20px;
+-js-display: flex;
+@include flexbox();
+@include flex-direction(column);
+@include mq(tablet){
+		@include flex-direction(row);
+}
+	
+	.ss-form-email{
+	display: block;
+    padding: 20px;
+    margin: 10px 0px 20px 0px;
+    box-shadow: none;
+    text-shadow: none;
+    @include border-radius(3px);
+    color: #333;
+    font-family: inherit;
+    font-size: 17px;
+    height: 20px;
+    line-height: 20px;
+    margin: 9px 10px 0 0;
+    outline: none;
+    padding: 15px;
+    border: 1px solid $input-light-border;;
+	}
+
+	.ss-form-disclaimer{
+	display:block;
+	@include font-size(13px);
+	margin-top: 20px;
+	}
+
+}

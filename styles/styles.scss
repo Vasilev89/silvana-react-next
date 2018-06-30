@@ -1,0 +1,42 @@
+@import 'bass';
+@import 'normalize';
+@import 'vars';
+@import 'sass-mq';
+@import 'tools';
+@import 'buttons';
+@import 'objects';
+@import 'settings';
+@import 'type';
+@import 'footer';
+@import 'paintings-element';
+@import 'form-element';
+@import 'intro-element';
+@import 'ss-popup';
+@import 'navigation';
+@import 'animations';
+
+.ss-component{
+margin-top: $unrelated-spacing;
+}
+
+ul{
+margin:0px;
+}
+
+ul{
+padding-left:0px;
+}
+
+ul li{
+list-style:none;
+}
+
+
+img{
+max-width:100%;
+}
+
+.container-fluid{
+margin:auto;
+max-width:$container-max-width;
+}
