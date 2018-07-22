@@ -3,7 +3,7 @@ $hero-image-height:250px;
 .ss-component-introduction{
 overflow:hidden;
 position:relative;
-margin-top: $related-spacing;
+margin-top: $related-spacing - 10px;
 -js-display: flex;
 @include flexbox();
 @include flex-direction(column);
@@ -23,7 +23,6 @@ min-height:$hero-image-height;
 	min-height:$hero-image-height;
 	position: relative;
 	padding:0px 20px 10px 40px;
-	z-index: 20;
 	background: $ss-lign-fill;
 	
 	.ss-button-variation-1{
@@ -44,8 +43,4 @@ min-height:$hero-image-height;
 	@include transform(rotate(6deg))
 	}
 
-}
-
-.ss-component-hero{
-	margin-top: 105px !important;
 }

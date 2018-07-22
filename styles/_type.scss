@@ -103,14 +103,10 @@ header{
 margin:auto;
 background: #fff;
 max-width: $container-max-width;
-padding:0px 20px 20px 20px;
+padding:0px 0px 20px 0px;
 -js-display: flex;
 @include flexbox();
 z-index: map-get($zindex, under-ground);
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
 @include flex-direction(column);
 	@include mq(mobile){
 		@include flex-direction(row);

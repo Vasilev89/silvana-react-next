@@ -4,7 +4,7 @@ class Introduction extends Component{
     render(){
         return(
 
-        <section className="ss-component ss-component-introduction ss-component-hero">
+        <section className="ss-component-introduction ss-component-hero">
             <figure styles=""  className="col-12 lg-col-7" />
             <style jsx>{`
             /* this style only applies to the span within lexical scope */
