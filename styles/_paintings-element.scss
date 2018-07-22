@@ -3,7 +3,7 @@
 	margin-bottom: 20px;
 }
 
-.ss-component-arwtworks-paintings{
+.pswp-thumbnails{
 -js-display: flex;
 @include flexbox();
 @include flex-direction(column);
@@ -12,23 +12,6 @@ margin-bottom: 20px;
 		@include flex-direction(row);
 	}
 	
-	li{
-		text-align:center;
-	}	
-figure{
-	margin:0px;
-	margin-bottom:$related-spacing;
-	@include mq(mobile-large){
-	margin-right:20px;
-	margin-bottom:0px;
-	}
-
-	img{
-	display:block;
-	margin:auto;	
-	max-height:400px;
-	}
-}
 
 .ss-component-arwtworks-paintings-caption{
 	text-align:center;

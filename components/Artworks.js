@@ -60,10 +60,8 @@ class Artworks extends Component{
         return(
           <section className="ss-component ss-component-artworks">
           <h2>Artworks</h2>
-            <section className="ss-component-arwtworks-paintings row">
               <PhotoSwipeGallery items={this.state.galleryItems}
               thumbnailContent={this.getThumbnailContent}/>
-            </section>
           </section>
         )
     }

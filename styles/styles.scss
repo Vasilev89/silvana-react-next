@@ -20,11 +20,21 @@
 .pswp-thumbnails{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 
     .pswp-thumbnail{
-    margin-right:20px;    
+    flex:1;    
     }
 }
+
+div:nth-of-type(2n) {
+    text-align:center;
+}
+
+div:nth-of-type(3n) {
+    text-align:right;
+}
+
 
 .ss-component{
 margin-top: $unrelated-spacing;
