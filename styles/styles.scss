@@ -14,6 +14,16 @@
 @import 'ss-popup';
 @import 'navigation';
 @import 'animations';
+@import 'photoswipe';
+
+.pswp-thumbnails{
+    display: flex;
+    flex-direction: row;
+
+    .pswp-thumbnail{
+    margin-right:20px;    
+    }
+}
 
 .ss-component{
 margin-top: $unrelated-spacing;

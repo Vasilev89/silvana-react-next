@@ -13,7 +13,7 @@ class SignUp extends Component{
                 <form class="ss-form" action="https://silvanasahagart.us17.list-manage.com/subscribe/post" method="POST" name='Sign Up User'>
                     <input type="hidden" name="u" value="854fb6542dc8e5dc4a4a1a30f"/>
                     <input type="hidden" name="id" value="bc3216ec1f"/>
-                    <input required type="email" class="form-control ss-form-email md-col-9" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder='Email address'/>
+                    <input required type="email" class="form-control ss-form-email md-col-9" autoCapitalize="off" autoCorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder='Email address'/>
                     <button class="ss-standard-cta-link ss-standard-cta-link__primary-cta ss-standard-cta-link__primary-cta-promotion col-10 md-col-3" type="submit">Sign Up</button>
                 </form>
                 <small id="emailHelp" class="form-text text-muted ss-form-disclaimer">We'll never share your email with anyone else. That's a promise.</small>

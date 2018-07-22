@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import React, { Component } from 'react';
+import Headroom from './headroom/index';
 
 class Header extends Component {
   render() {
     return (
-      <header className="ss-component-header header--fixed headroom">
+      <Headroom>
+      <header className="ss-component-header">
       <h1 className="ss-logo col-12 md-col-4"><a href="index.html">Silvana Sahag</a></h1>
       <nav className="ss-navigation-component md-col-4 ss-desktop-navigation" itemProp="Website Navigation">
         <ul>
@@ -32,6 +34,7 @@ class Header extends Component {
         </a>
       </menu>
     </header>
+  </Headroom>
     );
   }
 }
