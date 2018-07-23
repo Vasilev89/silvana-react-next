@@ -35,7 +35,7 @@ export default class Headroom extends Component {
     onUnfix: noop,
     wrapperStyle: {},
     pinStart: 0,
-    calcHeightOnResize: true,
+    calcHeightOnResize: false,
   };
 
   constructor (props) {

@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import React, { Component } from 'react';
 import Headroom from './headroom/index';
-
 class Header extends Component {
   render() {
     return (
@@ -11,8 +10,12 @@ class Header extends Component {
       <nav className="ss-navigation-component md-col-4 ss-desktop-navigation" itemProp="Website Navigation">
         <ul>
           <li className="ss-navigation-component-current ss-init-sign-up-form"><a className="ss-init-signup" href="#">Shop</a></li>
-          <li><a href="about.html">About The Artist</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <Link href="/about">
+            <li><a href="#">About The Artist</a></li>
+          </Link>
+          <Link href="/contact">
+            <li><a href="#">Contact</a></li>
+          </Link>
         </ul>
       </nav>
       <ul className="ss-social-icons col-12 md-col-4 ">
