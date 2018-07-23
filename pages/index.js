@@ -10,14 +10,20 @@ import Footer from '../components/Footer'
 import '../styles/styles.scss'
 
 export default () => (
-  <section className='container-fluid'>
-    <Head title="Home" />
-    <Header />
-    <MobileMenu />
-    <Introduction />
-    <Artworks />
-    <ArtworksCTA />
-    <SignUp />
-    <Footer />
-  </section>
+  <main>
+    <section className='container-fluid'>
+      <Head title="Home" />
+      <Header />
+      <MobileMenu />
+      <Introduction />
+      <Artworks />
+      <ArtworksCTA />
+    </section>
+    <section>
+      <SignUp />
+    </section>
+    <section>
+      <Footer />
+    </section>
+  </main>
 )
