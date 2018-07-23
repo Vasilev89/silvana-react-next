@@ -12,7 +12,7 @@ import '../styles/styles.scss'
 export default () => (
   <main>
     <section className='container-fluid'>
-      <Head title="Home" />
+      <Head title="Silvana Sahag Art | Home" />
       <Header />
       <MobileMenu />
       <Introduction />

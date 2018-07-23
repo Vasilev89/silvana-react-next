@@ -6,7 +6,9 @@ class Header extends Component {
     return (
       <Headroom>
       <header className="ss-component-header">
-      <h1 className="ss-logo col-12 md-col-4"><a href="index.html">Silvana Sahag</a></h1>
+      <Link href="/home">
+        <h1 className="ss-logo col-12 md-col-4"><a href="#">Silvana Sahag</a></h1>
+      </Link>
       <nav className="ss-navigation-component md-col-4 ss-desktop-navigation" itemProp="Website Navigation">
         <ul>
           <li className="ss-navigation-component-current ss-init-sign-up-form"><a className="ss-init-signup" href="#">Shop</a></li>
