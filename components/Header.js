@@ -54,8 +54,7 @@ class Header extends Component {
     </header>
   </Headroom>
     <PopUp
-    className={ this.state.showPopup ? "ss-pop-up-trigger ss-popup-ui show" : "ss-pop-up-trigger ss-popup-ui" }
-    onClick={this.togglePopup.bind(this)}
+    toggleOverlay={ this.state.showPopup ? "ss-pop-up-trigger ss-popup-ui show" : "ss-pop-up-trigger ss-popup-ui" }
     />
   </div>
     );
