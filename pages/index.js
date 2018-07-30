@@ -9,6 +9,7 @@ import SignUp from '../components/SignUp'
 import Footer from '../components/Footer'
 import '../styles/styles.scss'
 
+
 export default () => (
   <main>
     <section className='container-fluid'>

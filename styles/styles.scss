@@ -35,6 +35,14 @@ div:nth-of-type(3n) {
     text-align:right;
 }
 
+.ss-about-section{
+    .ss-component:nth-child(odd){
+        .Media-figure{
+            order:2;
+        }
+    }
+}
+
 
 .ss-component{
 margin-top: $unrelated-spacing;

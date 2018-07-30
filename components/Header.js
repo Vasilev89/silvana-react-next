@@ -1,17 +1,30 @@
 import Link from 'next/link'
 import React, { Component } from 'react';
 import Headroom from './headroom/index';
+import PopUp from '../components/Popup';
 class Header extends Component {
+  constructor() {
+    super();
+    this.state = {
+      showPopup: false
+    };
+  }
+  togglePopup() {
+    this.setState({
+      showPopup: !this.state.showPopup
+    });
+  }
   render() {
     return (
+      <div>
       <Headroom>
       <header className="ss-component-header">
-      <Link href="/home">
+      <Link href="/">
         <h1 className="ss-logo col-12 md-col-4"><a href="#">Silvana Sahag</a></h1>
       </Link>
       <nav className="ss-navigation-component md-col-4 ss-desktop-navigation" itemProp="Website Navigation">
         <ul>
-          <li className="ss-navigation-component-current ss-init-sign-up-form"><a className="ss-init-signup" href="#">Shop</a></li>
+          <li onClick={this.togglePopup.bind(this)} className="ss-navigation-component-current ss-init-sign-up-form"><a className="ss-init-signup" href="#">Shop</a></li>
           <Link href="/about">
             <li><a href="#">About The Artist</a></li>
           </Link>
@@ -40,6 +53,11 @@ class Header extends Component {
       </menu>
     </header>
   </Headroom>
+    <PopUp
+    className={ this.state.showPopup ? "ss-pop-up-trigger ss-popup-ui show" : "ss-pop-up-trigger ss-popup-ui" }
+    onClick={this.togglePopup.bind(this)}
+    />
+  </div>
     );
   }
 }
