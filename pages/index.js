@@ -15,7 +15,6 @@ export default () => (
     <section className='container-fluid'>
       <Head title="Silvana Sahag Art | Home" />
       <Header />
-      <MobileMenu />
       <Introduction />
       <Artworks />
       <ArtworksCTA />

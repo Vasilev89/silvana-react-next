@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 class PopUp extends Component{
     render(){
         return(
-        <section className={this.props.toggleOverlay}>
+        <section onClick={this.props.closePopup} className={this.props.toggleOverlay}>
           <div className="ss-pop-up-trigger ss-popup-ui"></div>
           <div className="ss-popup-ui-wrapper">
-              <div className="ss-popup-ui-content">
+              <div className={this.props.togglePopupOverlay}>
                 <div className="ss-feature-image" />
                 <div className="ss-popup-my-content">
                   <h3>The Shop is Coming soon...</h3>
