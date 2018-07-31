@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {PhotoSwipe} from 'react-photoswipe-node';
 import {PhotoSwipeGallery} from 'react-photoswipe-node';
+import LazyLoad from 'react-lazy-load';
+
 
 class Artworks extends Component{
     state = {
@@ -53,7 +55,9 @@ class Artworks extends Component{
     
       getThumbnailContent = (item) => {
         return (
-          <img src={item.thumbnail} with={297} height={400}/>
+          <LazyLoad height={400} offsetTop={3000}>
+            <img src={item.thumbnail} with={297} height={400}/>
+          </LazyLoad>
         );
       };
     render(){
