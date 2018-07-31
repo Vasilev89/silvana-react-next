@@ -35,6 +35,10 @@ div:nth-of-type(3n) {
     text-align:right;
 }
 
+.hidden{
+    display:none;
+}
+
 .ss-about-section{
     .ss-component:nth-child(odd){
         .Media-figure{
