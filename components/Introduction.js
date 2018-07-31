@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Link from 'next/link'
 class Introduction extends Component{
     render(){
         return(
@@ -24,7 +24,9 @@ class Introduction extends Component{
             <h2 className="ss-component-introduction-title">Silvana is a painter.</h2>
             <p className="ss-hero ss-light-copy col-12">Her work explores the relationships between people, objects and emotions. Her art aims to provoke thought and question everything.
             </p>
-            <a className="ss-standard-cta-link" href="about.html">Find Out More</a>
+            <Link href="about">
+            <a className="ss-standard-cta-link" href="about.html">Find out more > </a>
+            </Link>
             <span className="ss-standard-separator">or</span>
             <a className="ss-standard-cta-link ss-standard-cta-link__primary-cta ss-init-signup" href="#">Buy Silvana's Art</a>
 
