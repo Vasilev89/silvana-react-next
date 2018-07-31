@@ -3,6 +3,16 @@ import React, { Component } from 'react';
 import Headroom from './headroom/index';
 import PopUp from '../components/Popup';
 import MobileMenu from '../components/MobileMenu';
+import NProgress from 'nprogress'
+import Router from 'next/router'
+
+Router.onRouteChangeStart = (url) => {
+  console.log(`Loading: ${url}`)
+  NProgress.start()
+}
+Router.onRouteChangeComplete = () => NProgress.done()
+Router.onRouteChangeError = () => NProgress.done()
+
 class Header extends Component {
   constructor() {
     super();
