@@ -7,7 +7,8 @@ class Header extends Component {
   constructor() {
     super();
     this.state = {
-      showPopup: false
+      showPopup: false,
+      showMobileOverlay: false
     };
   }
   togglePopup() {
@@ -15,6 +16,13 @@ class Header extends Component {
       showPopup: !this.state.showPopup
     });
   }
+
+  toggleMenu() {
+    this.setState({
+      showMobileOverlay: !this.state.showMobileOverlay
+    });
+  }
+
   render() {
     return (
       <div>
@@ -45,7 +53,7 @@ class Header extends Component {
             <a href="class=&quot;external&quot;" target="_blank"><i className="social_media_icon envelope" /></a>
           </li>
         </ul>
-        <menu className="menu ss-mobile-navigation nav-toggle">
+        <menu onClick={this.toggleMenu.bind(this)} className="menu ss-mobile-navigation nav-toggle">
           <a href="#" className="ss-mobile-navigation-menu-link">
             <span>
               Menu
@@ -59,7 +67,10 @@ class Header extends Component {
     toggleOverlay={this.state.showPopup ? "ss-pop-up-trigger ss-popup-ui show" : "ss-pop-up-trigger ss-popup-ui"}
     togglePopupOverlay = {this.state.showPopup ? "ss-popup-ui-content show" : "ss-popup-ui-content"}
     />
-    <MobileMenu/>
+    <MobileMenu
+    closeMobileMenu = {this.toggleMenu.bind(this)}
+    toggleMobileOverlay={this.state.showMobileOverlay ? "menu-overlay ss-mobile-navigation ss-site-overlay open" : "menu-overlay ss-mobile-navigation ss-site-overlay"}
+    />
   </div>
     );
   }
