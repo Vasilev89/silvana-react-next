@@ -15,8 +15,8 @@ class PopUp extends Component{
                   Silvana is currently re-building and improving her website. If you would like to stay up-to-date with us and get notified when she is ready to ship then please give us your email.
                 </p>
                 <form name="sssignup" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-                  <input type="hidden" name="bot-field" />
-                  <input className="form-control ss-form-email" type="email" autoCapitalize="off" autoCorrect="off" name="MERGE0" id="MERGE0" size={25} placeholder="Please Enter Your Email Address" defaultValue />
+                  <input type="hidden" name="bot-field"/>
+                  <input className="form-control ss-form-email" type="email" autoCapitalize="off" autoCorrect="off" name="MERGE0" id="MERGE0" size={25} placeholder="Please Enter Your Email Address" />
                   <button className="ss-standard-cta-link ss-standard-cta-link__primary-cta ss-standard-cta-link__primary-cta-promotion" type="submit">Sign Up</button>
                 </form>
               </div>
