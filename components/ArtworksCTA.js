@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Link from 'next/link'
 import {PhotoSwipe} from 'react-photoswipe-node';
 class ArtworksCTA extends Component {
     state = {
@@ -73,7 +74,9 @@ class ArtworksCTA extends Component {
 <section className="ss-component-arwtworks-cta">
     <a className="ss-standard-cta-link ss-copy-align-center ss-init-gallery" onClick={this.openPhotoSwipe} href="#">View All Art <i className="fa fa-image fa-ss-standard-margin"></i></a>
     <span className="ss-standard-separator__alwayson ss-standard-separator-bottom ss-standard-separator-top">or</span>
+    <Link href="/contact">
     <a className="ss-standard-cta-link ss-init-signup ss-standard-cta-link__primary-cta ss-standard-cta-link__primary-cta-promotion ss-button-maxedout ss-copy-align-center" href="#">Buy Silvana's Art</a>
+    </Link>
     <PhotoSwipe isOpen={this.state.isOpen} items={this.state.galleryItems}
     options={this.state.options}
     onClose={this.handleClose}/>

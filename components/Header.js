@@ -69,7 +69,8 @@ class Header extends Component {
     />
     <MobileMenu
     closeMobileMenu = {this.toggleMenu.bind(this)}
-    toggleMobileOverlay={this.state.showMobileOverlay ? "menu-overlay ss-mobile-navigation ss-site-overlay open" : "menu-overlay ss-mobile-navigation ss-site-overlay"}
+    toggleMobilePopup = {this.togglePopup.bind(this)}
+    toggleMobileOverlay= {this.state.showMobileOverlay ? "menu-overlay ss-mobile-navigation ss-site-overlay open" : "menu-overlay ss-mobile-navigation ss-site-overlay"}
     />
   </div>
     );
