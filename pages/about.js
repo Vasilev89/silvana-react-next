@@ -12,7 +12,7 @@ export default () => (
     <section className='container-fluid ss-about-section '>
       <Head title="About the Artist | Silvana Sahag Art" />
       <Header />
-      <MobileMenu />
+      
       <Hero />
       <AboutSection />
       <AboutSection />

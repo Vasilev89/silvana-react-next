@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Head from '../components/head'
 import Header from '../components/Header'
 import MobileMenu from '../components/MobileMenu'
+import ContactForm from '../components/ContactForm'
 import AboutSection from '../components/AboutSection'
 import Hero from '../components/Hero'
 import SignUp from '../components/SignUp'
@@ -12,6 +13,7 @@ export default () => (
     <section className='container-fluid ss-contact-section '>
       <Head title="Contact Silvana | Purchase Paintings" />
       <Header />
+      <ContactForm />
       <MobileMenu />
     </section>
     <section>

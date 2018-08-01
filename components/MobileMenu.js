@@ -3,7 +3,7 @@ import Link from 'next/link'
 class MobileMenu extends Component{
     render(){
     return(
-        <div className={this.props.toggleMobileOverlay}>
+        <section className={this.props.toggleMobileOverlay}>
             <span onClick={this.props.closeMobileMenu} className="ss-mobile-navigation-close-button">Close</span>
             <nav className="overlay-menu">
             <ul className="one">
@@ -19,7 +19,7 @@ class MobileMenu extends Component{
                 </Link>
             </ul>
             </nav>
-        </div>
+        </section>
         )
     }
 }
