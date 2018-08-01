@@ -17,22 +17,48 @@
 @import 'photoswipe';
 @import 'social-icons';
 
-.pswp-thumbnails{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.LazyLoad {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  
+    &.is-visible {
+      opacity: 1;
+    }
+  }
+  
+  .ScrollableContainer {
+    height: 200px;
+    overflow: scroll;
+    background-color: grey;}
 
+.pswp-thumbnails{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    @include mq(tablet){
+        flex-direction: row;
+        justify-content: space-around;
+    }
     .pswp-thumbnail{
-    flex:1;    
+        margin-bottom: 40px;
+        @include mq(tablet){
+            margin-right: 10px;
+            flex:1;
+        }
     }
 }
 
 div:nth-of-type(2n) {
+    @include mq(tablet){
     text-align:center;
+    }
 }
 
 div:nth-of-type(3n) {
-    text-align:right;
+    @include mq(tablet){
+        text-align:right;
+        margin-right:0px;
+    }
 }
 
 .hidden{

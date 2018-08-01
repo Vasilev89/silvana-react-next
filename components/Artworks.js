@@ -55,8 +55,11 @@ class Artworks extends Component{
     
       getThumbnailContent = (item) => {
         return (
-          <LazyLoad height={400} offsetTop={3000}>
+          <LazyLoad height={400} offsetTop={1000} debounce={0} throttle={100}>
+          <div>
+            <div className="filler" />
             <img src={item.thumbnail} with={297} height={400}/>
+            </div>
           </LazyLoad>
         );
       };
