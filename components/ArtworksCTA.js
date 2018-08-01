@@ -9,7 +9,7 @@ class ArtworksCTA extends Component {
             src: '../static/Painting1_Large.jpg',
             thumbnail: '../static/Painting1.jpg',
             w: 1100,
-            h: 371,
+            h: 1491,
             title: 'Image 1'
           },
           {
@@ -29,21 +29,21 @@ class ArtworksCTA extends Component {
           {
             src: '../static/Painting3_Large.jpg',
             thumbnail: '../static/Painting3.jpg',
-            w: 1200,
-            h: 900,
+            w: 2964,
+            h: 3947,
             title: 'Image 3'
           },
           {
             src: '../static/Painting4_Large.jpg',
             thumbnail: '../static/Painting4.jpg',
-            w: 1200,
-            h: 900,
+            w: 3024,
+            h: 4032,
             title: 'Image 3'
           },{
             src: '../static/Painting5_Large.jpg',
             thumbnail: '../static/Painting5.jpg',
-            w: 1200,
-            h: 900,
+            w: 1270,
+            h: 1920,
             title: 'Image 3'
           }
         ],

@@ -12,7 +12,7 @@ class Artworks extends Component{
             src: '../static/Painting1_Large.jpg',
             thumbnail: '../static/Painting1.jpg',
             w: 1100,
-            h: 371,
+            h: 1491,
             title: 'Image 1'
           },
           {
@@ -25,8 +25,8 @@ class Artworks extends Component{
           {
             src: '../static/Painting3_Large.jpg',
             thumbnail: '../static/Painting3.jpg',
-            w: 1200,
-            h: 900,
+            w: 2964,
+            h: 3947,
             title: 'Image 3'
           }
         ],
