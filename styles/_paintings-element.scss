@@ -1,13 +1,11 @@
 .ss-component-artworks{
 	position: relative;
-	margin-bottom: 20px;
 }
 
 .pswp-thumbnails{
 -js-display: flex;
 @include flexbox();
 @include flex-direction(column);
-margin-bottom: 20px;
 	@include mq(mobile-large){
 		@include flex-direction(row);
 	}

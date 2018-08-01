@@ -75,7 +75,10 @@ div:nth-of-type(3n) {
 
 
 .ss-component{
-margin-top: $unrelated-spacing;
+    margin-top: 20px;
+    @include mq(tablet){
+    margin-top: $unrelated-spacing;
+    }
 }
 
 ul{

@@ -30,8 +30,9 @@ class Introduction extends Component{
             <a className="ss-standard-cta-link" href="about.html">Find out more > </a>
             </Link>
             <span className="ss-standard-separator">or</span>
+            <Link href="/contact">
             <a className="ss-standard-cta-link ss-standard-cta-link__primary-cta ss-init-signup" href="#">Buy Silvana's Art</a>
-
+            </Link>
             </section>
 
         </section>
