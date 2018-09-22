@@ -52,10 +52,6 @@ margin: auto;
   @include flex(1);
 }
 
-.Media-figure {
-  margin-right: 1em;
-}
-
 @mixin media-object($margin:10px, $position: left, $formating-context: 'overflow', $media: '.media', $block: '.block') {
     @include pie-clearfix; // or extend a .clearfix class
     #{unquote($block)} {

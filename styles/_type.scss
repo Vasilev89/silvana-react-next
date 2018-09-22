@@ -132,7 +132,7 @@ h1{
 h2{
 @include font-size(25);	
 color:$body-copy-default;
-margin-bottom: $related-spacing;
+margin-bottom: $related-spacing + 50px;
 }
 
 .ss-logo{

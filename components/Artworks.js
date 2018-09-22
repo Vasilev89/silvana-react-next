@@ -13,21 +13,21 @@ class Artworks extends Component{
             thumbnail: '../static/Painting1.jpg',
             w: 1100,
             h: 1491,
-            title: 'Image 1'
+            title: 'Redemption. Print: £400. Original Work Oil on canvas(mixed technique) 1m x 2 - £1995'
           },
           {
             src: '../static/Painting2_Large.jpg',
             thumbnail: '../static/Painting2.jpg',
             w: 1125,
             h: 1594,
-            title: 'Image 2'
+            title: 'Soul.Print: £400.Original Work Oil on canvas(mixed technique) 1m x 2 - £1995'
           },
           {
             src: '../static/Painting3_Large.jpg',
             thumbnail: '../static/Painting3.jpg',
             w: 2964,
             h: 3947,
-            title: 'Image 3'
+            title: 'Faces and Places.Print: £400.Original Work Oil on canvas(mixed technique) 1m x 2 - £1995'
           }
         ],
         options: {
@@ -59,6 +59,7 @@ class Artworks extends Component{
           <div>
             <div className="filler" />
             <img src={item.thumbnail} with={297} height={400}/>
+            
             </div>
           </LazyLoad>
         );
@@ -69,6 +70,22 @@ class Artworks extends Component{
           <h2>Artworks</h2>
               <PhotoSwipeGallery items={this.state.galleryItems}
               thumbnailContent={this.getThumbnailContent}/>
+            <div className='pswp-thumbnails'>
+                <div className="pswp-thumbnail"><h4>Redemption.</h4> 
+                <p>Print: £400.</p>
+                <p>Original Work Oil on canvas(mixed technique) 1m x 2 - £1995</p>
+                </div>
+                
+                <div className="pswp-thumbnail"><h4>Soul.</h4> 
+                <p>Print: £400.</p>
+                <p>Original Work Oil on canvas(mixed technique) 1m x 2 - £1995</p>
+                </div>
+
+                <div className="pswp-thumbnail"><h4>Faces</h4> 
+                <p>Print: £400.</p>
+                <p>Original Work Oil on canvas(mixed technique) 1m x 2 - £1995</p>
+                </div>
+            </div>
           </section>
         )
     }

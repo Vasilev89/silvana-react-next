@@ -38,16 +38,16 @@ class Header extends Component {
       <div>
       <Headroom>
         <header className="ss-component-header">
-        <Link href="/">
+        <Link prefetch href="/">
           <h1 className="ss-logo col-12 md-col-4"><a href="#">Silvana Sahag</a></h1>
         </Link>
         <nav className="ss-navigation-component md-col-4 ss-desktop-navigation" itemProp="Website Navigation">
           <ul>
             <li onClick={this.togglePopup.bind(this)} className="ss-navigation-component-current ss-init-sign-up-form"><a className="ss-init-signup" href="#">Shop</a></li>
-            <Link href="/about">
+            <Link prefetch href="/about">
               <li><a href="#">About The Artist</a></li>
             </Link>
-            <Link href="/contact">
+            <Link prefetch href="/contact">
               <li><a href="#">Contact</a></li>
             </Link>
           </ul>

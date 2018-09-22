@@ -13,9 +13,11 @@ export default () => (
       <Head title="About the Artist | Silvana Sahag Art" />
       <Header />
       <Hero />
-      <AboutSection />
-      <AboutSection />
-      <AboutSection />
+      <AboutSection openingParagraph='It’s difficult to describe the thinking process behind an artist - especially when that artist is myself.
+      The feeling  of self-exploration that I aim to elicit within the viewers when they see my art is perhaps the best way to describe both my work 
+      and myself.
+      It is my utmost aim to encourage whoever is viewing my art to journey into their own soul and provoke their own inner critic to unveil a part of their c
+      haracter which they hadn’t even thought existed.' />
     </section>
     <section>
       <SignUp />

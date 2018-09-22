@@ -1,6 +1,6 @@
 import NextHead from 'next/head'
 import { string } from 'prop-types'
-
+import ReactGA from 'react-ga';
 const defaultDescription = 'Silvana Sahag is an artist'
 const defaultOGURL = ''
 const defaultOGImage = ''

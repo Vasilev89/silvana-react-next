@@ -3,11 +3,17 @@
 }
 
 .pswp-thumbnails{
--js-display: flex;
-@include flexbox();
-@include flex-direction(column);
-	@include mq(mobile-large){
+	display: none;
+
+	@include mq(desktop){
+		margin-top: -40px;
+		-js-display: flex;
+		@include flexbox();
+		@include flex-direction(column);
 		@include flex-direction(row);
+		h4,p{
+			text-align:center;	
+		}
 	}
 	
 
@@ -22,6 +28,11 @@
 }
 
 .ss-component-arwtworks-cta{
+margin-top: -$related-spacing;
+	.ss-standard-cta-link{
+		position: relative;
+		z-index:99;
+	}
 button{
 	@extend .ss-center-item;	
 	}
